@@ -38,7 +38,7 @@ export default {
     }
     .card-operation{
       height: 40px;
-      display: flex;
+      display: flex; 
       align-items: center;
       justify-content: center;
     }

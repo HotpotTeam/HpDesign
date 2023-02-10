@@ -7,5 +7,4 @@ actionLink: views/guide/install
 
 ---
 <ClientOnly>
-  <xxx-footer/>
 </ClientOnly>
