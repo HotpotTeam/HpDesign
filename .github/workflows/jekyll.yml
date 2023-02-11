@@ -40,7 +40,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.4.0
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.HP_DESIGN }}
           folder: docs/.vuepress/dist
           git-config-name: github-actions[bot]
           git-config-email: github-actions[bot]@users.noreply.github.com
