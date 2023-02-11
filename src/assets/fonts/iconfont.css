@@ -5,6 +5,14 @@
        url('iconfont.ttf?t=1633765275878') format('truetype');
 }
 
+@font-face {
+  font-family: "icon"; /* Project id 3887931 */
+  src: url('iconfont-arrow.woff2?t=1675930241618') format('woff2'),
+       url('iconfont-arrow.woff?t=1675930241618') format('woff'),
+       url('iconfont-arrow.ttf?t=1675930241618') format('truetype');
+}
+
+
 .icon {
   font-family: "icon" !important;
   font-size: 16px;
@@ -12,6 +20,37 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+
+
+/* 箭头 */
+.xxx-icon-arrow-left:before {
+  content: "\e69e";
+}
+
+.xxx-icon-arrow-right:before {
+  content: "\e6a4";
+}
+
+.xxx-icon-arrow-down:before {
+  content: "\e693";
+}
+
+.xxx-icon-arrow-up:before {
+  content: "\e695";
+}
+
+
+
+
+
+
+
+/* 默认 */
+
+
+
 
 .xxx-icon-add:before {
   content: "\e6da";
