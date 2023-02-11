@@ -30,12 +30,12 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           registry-url: https://registry.npmjs.com/
-          cache: 'npm'
+          cache: 'yarn'
 
       - name: Install dependencies
-        run: npm install
+        run: yarn
       - name: Build
-        run: npm run docs:build
+        run: yarn docs:build
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.4.0
@@ -44,4 +44,3 @@ jobs:
           folder: docs/.vuepress/dist
           git-config-name: github-actions[bot]
           git-config-email: github-actions[bot]@users.noreply.github.com
-  
