@@ -17,6 +17,9 @@
       :value="value"
       :maxlength="$attrs.maxlength instanceof Object ? 524288 : $attrs.maxlength"
       @input="handleInput"
+      @focus="handleFocus"
+      @blur="handleBlur"
+      @change="handleChange"
       />
     <!-- 后缀 -->
     <div class="input-prefix"><slot name="suffix"></slot></div>
