@@ -7,9 +7,12 @@
 | v-model | 绑定值 | 	string / number / boolean |- | - |
 | placeholder | 输入框占位文本 | 	string  |- | - |
 | disabled | 是否禁用 | boolean |- | false |
+| error | 是否错误 | boolean |- | false |
+| size | 尺寸选择 | object | mini / small / medium / large| {medium: true} |
+| textCenter | 是否输入居中 | boolean | - | false |
 | clearable | 是否可清空 | boolean |- | false |
 | showPassword | 是否密码输入框 | boolean |- | false |
-| maxlength | 最大输入长度 | number |- | - |
+| maxlength | 最大输入长度，有两种形式，具体见上面示例 | number / object |- | 524288 |
 | show-word-limit | 是否显示输入字数统计 | boolean |- | false |
 
 <font size=5>Methods</font>
