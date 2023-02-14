@@ -1,11 +1,11 @@
 @font-face {
   font-family: "icon"; /* Project id 3887931 */
-  src: url('iconfont.woff2?t=1676111832410') format('woff2'),
-       url('iconfont.woff?t=1676111832410') format('woff'),
-       url('iconfont.ttf?t=1676111832410') format('truetype');
+  src: url('iconfont.woff2?t=1676360624979') format('woff2'),
+       url('iconfont.woff?t=1676360624979') format('woff'),
+       url('iconfont.ttf?t=1676360624979') format('truetype');
 }
 
-.iconfont {
+.icon {
   font-family: "icon" !important;
   font-size: 16px;
   font-style: normal;
@@ -38,7 +38,7 @@
 }
 
 .xxx-icon-loading:before {
-  content: "\e60b";
+  content: "\e60c";
 }
 
 .xxx-icon-book:before {
