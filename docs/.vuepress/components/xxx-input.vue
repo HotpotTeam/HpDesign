@@ -303,7 +303,7 @@ data() {
 </script>
 <style lang="scss">
 @import url('../public/fonts/iconfont.css');
-@import url('../public/newFonts/iconfont.css');
+@import url('../public/newfonts/iconfont.css');
 </style>
 
 
