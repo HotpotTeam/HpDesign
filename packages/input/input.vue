@@ -17,6 +17,9 @@
       :value="value"
       :maxlength="$attrs.maxlength instanceof Object ? 524288 : $attrs.maxlength"
       @input="handleInput"
+      @focus="handleFocus"
+      @blur="handleBlur"
+      @change="handleChange"
       />
     <!-- 后缀 -->
     <div class="input-prefix"><slot name="suffix"></slot></div>
@@ -217,7 +220,7 @@ export default {
     line-height: 40px;
     outline: none;
     padding: 0 15px;
-    margin: 2px 0;
+    margin: 0;
     transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
     width: 100%;
 
@@ -389,7 +392,7 @@ export default {
   border-radius: 4px;
   white-space: nowrap;
   width: max-content;
-  margin: 2px 0;
+  margin: 0;
   
 }
 

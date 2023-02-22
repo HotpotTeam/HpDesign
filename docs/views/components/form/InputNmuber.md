@@ -9,6 +9,11 @@
 | disabled | 禁用 | boolean |- | false |
 | step | 步长| number |- | 1 |
 | precision | 精度 | number |- | - |
+| sameSides | 选择按钮位置，默认`两侧加减按钮`，设置则`右侧升降按钮` | Boolean |- | false |
+
+
+
+
 
 <font size=5>Methods</font>
 | 事件名称| 说明 | 回调参数 |

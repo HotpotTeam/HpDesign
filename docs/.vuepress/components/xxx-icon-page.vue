@@ -97,7 +97,13 @@ export default {
         "arrow-left",
         "arrow-right",
         "arrow-up",
-        "arrow-down"
+        "arrow-down",
+        "arrowleft",
+        "arrowright",
+        "arrowup",
+        "arrowdown"
+
+
       ],
 
 
