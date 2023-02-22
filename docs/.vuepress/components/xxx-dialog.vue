@@ -12,7 +12,7 @@
         <xxx-button type="primary" @click="dialogVisible = false">确 定</xxx-button>
       </span>
     </xxx-dialog>
-    <xxx-card>
+    <xxx-card :cpyMsg="code1">
     <xxx-button type="primary" @click="dialogVisible = true">打开dialog</xxx-button>
       <template v-slot:code>
         <pre v-highlightjs><code class="vue">{{code1}}</code></pre>
@@ -31,10 +31,10 @@
         <xxx-button type="primary" @click="dialogVisible1 = false">确 定</xxx-button>
       </span>
     </xxx-dialog>
-    <xxx-card>
+    <xxx-card :cpyMsg="code2">
     <xxx-button type="primary" @click="dialogVisible1 = true">打开dialog</xxx-button>
       <template v-slot:code>
-        <pre v-highlightjs><code class="vue">{{code1}}</code></pre>
+        <pre v-highlightjs><code class="vue">{{code2}}</code></pre>
       </template>
     </xxx-card>
   </div>

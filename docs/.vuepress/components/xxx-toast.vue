@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3>Toast</h3>
-    <xxx-card>
+    <xxx-card :cpyMsg="code1">
       <xxx-button @click="open1">提示</xxx-button>
       <xxx-button @click="open2">成功</xxx-button>
       <xxx-button @click="open3">警告</xxx-button>

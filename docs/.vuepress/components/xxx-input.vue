@@ -2,7 +2,7 @@
   <div>
     <h3>基本用法</h3>
     <p>基本表单组件，并在原生控件基础上进行了功能扩展，可以组合使用。</p>
-    <xxx-card>
+    <xxx-card :cpyMsg="code1">
       <xxx-input
         v-model="value1" placeholder="请输入内容">
       </xxx-input>
@@ -14,7 +14,7 @@
     <!-- 为输入框状态添加错误状态 -->
     <h3>输入框状态</h3>
     <p>输入框可以设置禁用和错误状态。</p>
-    <xxx-card>
+    <xxx-card :cpyMsg="code2">
       <xxx-input
         v-model="value2" placeholder="禁用状态" disabled>
       </xxx-input>
@@ -30,7 +30,7 @@
     <!-- 输入框尺寸 -->
     <h3>输入框尺寸</h3>
     <p>输入框定义了四种尺寸: 迷你, 小型, 适中（默认）, 大, 分别为: 20px, 30px, 40px, 60px。</p>
-    <xxx-card>
+    <xxx-card :cpyMsg="code3">
       <div style="margin: 20px 0" >
       <span v-for="(item, index) in sizeArray" :key="index" >
          <xxx-button  @click="sizeObj=item">{{sizeName[index]}}</xxx-button>
@@ -46,7 +46,7 @@
 
     <h3>可清空输入框</h3>
     <p>输入框一键快速清空。</p>
-    <xxx-card>
+    <xxx-card :cpyMsg="code4">
       <xxx-input
         v-model="value5" placeholder="请输入内容" clearable>
       </xxx-input>
@@ -57,7 +57,7 @@
 
     <h3>密码框</h3>
     <p>用于输入密码。</p>
-    <xxx-card>
+    <xxx-card :cpyMsg="code5">
       <xxx-input
         v-model="value6" placeholder="请输入内容" showPassword>
       </xxx-input>
@@ -68,7 +68,7 @@
 
    <h3>文本居中框</h3>
     <p>输入框文字居中。</p>
-    <xxx-card>
+    <xxx-card :cpyMsg="code6">
       <xxx-input
         v-model="value7" placeholder="请输入内容" textCenter >
       </xxx-input>
@@ -80,7 +80,7 @@
 
    <h3>前缀与后缀</h3>
     <p>通过指定 prefix 和 suffix 插槽来在输入框内添加前缀和后缀。</p>
-    <xxx-card>
+    <xxx-card :cpyMsg="code7">
       <xxx-input
         v-model="value8" placeholder="请输入内容" >
         <template slot="prefix"><xxx-icon name='user' color="gray" size="30"> </xxx-icon></template>
@@ -98,7 +98,7 @@
 
 
     <h3>文本域</h3>
-    <xxx-card>
+    <xxx-card :cpyMsg="code8">
       <xxx-input
         v-model="value5" placeholder="请输入内容" type="textarea" >
       </xxx-input>
@@ -110,7 +110,7 @@
 
     <h3>限制长度</h3>
     <p>设置 max-length 可以限制最大字数，配合 show-word-limit 可以显示字数统计。</p>
-    <xxx-card>
+    <xxx-card :cpyMsg="code9">
       <xxx-input
         v-model="value11" placeholder="请输入内容" maxlength="10" show-word-limit>
       </xxx-input>

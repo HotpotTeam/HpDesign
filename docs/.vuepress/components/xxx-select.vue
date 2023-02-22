@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3>基本用法</h3>
-    <xxx-card>
+    <xxx-card :cpyMsg="code1">
       <xxx-select v-model="value1" placeholder="请选择" :width="240" :height="40">
         <template v-slot:xxx_option>
             <xxx-option

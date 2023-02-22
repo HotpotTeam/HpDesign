@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3>基本用法</h3>
-    <xxx-card>
+    <xxx-card :cpyMsg="code1">
       <xxx-switch
         v-model="value1">
       </xxx-switch>
@@ -10,7 +10,7 @@
       </template>
     </xxx-card>
     <h3>文字描述</h3>
-    <xxx-card>
+    <xxx-card :cpyMsg="code2">
       <xxx-switch
         v-model="value2"
         active-color="#13ce66"
@@ -23,7 +23,7 @@
       </template>
     </xxx-card>
     <h3>禁用状态</h3>
-    <xxx-card>
+    <xxx-card :cpyMsg="code3">
       <xxx-switch
         v-model="value3"
         disabled>
