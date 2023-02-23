@@ -53,6 +53,11 @@ module.exports = {
                     collapsable: false,
                     children:[
                       {
+                        title: 'Form',
+                        collapsable: false,
+                        path: 'views/components/form/Form.md',
+                      },
+                      {
                         title: 'Radio',
                         collapsable: false,
                         path: 'views/components/form/Radio.md',
