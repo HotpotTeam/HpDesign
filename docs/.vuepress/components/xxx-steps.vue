@@ -1,7 +1,7 @@
 <template>
   <div >
     <h3>基础用法</h3>
-    <sakura-card>
+    <xxx-card :cpyMsg="code1">
       <xxx-steps :active="active1">
         <xxx-step title="步骤 1"  ></xxx-step>
         <xxx-step title="步骤 2" ></xxx-step>
@@ -10,10 +10,10 @@
       <xxx-button type="primary" @click="set1">下一步</xxx-button>
 
       <template v-slot:code><pre v-highlightjs><code class="vue">{{code1}}</code></pre></template>
-    </sakura-card>
+    </xxx-card>
 
     <h3>自定义完成样式提示颜色</h3>
-    <sakura-card>
+    <xxx-card :cpyMsg="code2">
        <xxx-steps :active="active2" step-finish-color="#409eff">
         <xxx-step title="步骤 1"  ></xxx-step>
         <xxx-step title="步骤 2"  ></xxx-step>
@@ -22,10 +22,10 @@
       <xxx-button type="primary" @click="set2">下一步</xxx-button>
       
       <template v-slot:code><pre v-highlightjs><code class="vue">{{code2}}</code></pre></template>
-    </sakura-card>
+    </xxx-card>
 
     <h3>带图标的步骤条</h3>
-    <sakura-card>
+    <xxx-card :cpyMsg="code3">
        <xxx-steps :active="active3" space="200" >
         <xxx-step title="步骤 1" description="1992年我出生" icon="view"></xxx-step>
         <xxx-step title="步骤 2" description="1999年我上学前班" icon="view"></xxx-step>
@@ -34,10 +34,10 @@
       <xxx-button type="primary" @click="set3">下一步</xxx-button>
       
       <template v-slot:code><pre v-highlightjs><code class="vue">{{code3}}</code></pre></template>
-    </sakura-card>
+    </xxx-card>
 
     <h3>垂直步骤条</h3>
-    <sakura-card>
+    <xxx-card :cpyMsg="code4">
        <xxx-steps :active="active4"  direction="vertical" style="height:300px">
         <xxx-step title="步骤 1"  ></xxx-step>
         <xxx-step title="步骤 2"  ></xxx-step>
@@ -46,7 +46,7 @@
       <xxx-button type="primary" @click="set4">下一步</xxx-button>
       
       <template v-slot:code><pre v-highlightjs><code class="vue">{{code4}}</code></pre></template>
-    </sakura-card>
+    </xxx-card>
 
   </div>
 </template>

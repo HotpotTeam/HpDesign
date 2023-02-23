@@ -1,14 +1,14 @@
 <template>
   <div>
     <h3>基本用法</h3>
-    <xxx-card>
+    <xxx-card :cpyMsg="code1">
       <xxx-checkbox v-model="checked1">选项1</xxx-checkbox>
       <template v-slot:code>
         <pre v-highlightjs><code class="vue">{{code1}}</code></pre>
       </template>
     </xxx-card>
     <h3>禁用状态</h3>
-    <xxx-card>
+    <xxx-card :cpyMsg="code2">
       <xxx-checkbox v-model="checked1" disabled>备选项1</xxx-checkbox>
       <xxx-checkbox v-model="checked2" disabled>备选项</xxx-checkbox>
       <template v-slot:code>
@@ -16,7 +16,7 @@
       </template>
     </xxx-card>
     <h3>多选组</h3>
-    <xxx-card>
+    <xxx-card :cpyMsg="code3">
         <xxx-checkbox-group v-model="checkList1">
             <xxx-checkbox label="选项1">选项1</xxx-checkbox>
             <xxx-checkbox label="选项2">选项2</xxx-checkbox>
@@ -28,7 +28,7 @@
       </template>
     </xxx-card>
     <h3>带边框</h3>
-    <xxx-card>
+    <xxx-card :cpyMsg="code4">
         <xxx-checkbox-group v-model="checkList2">
             <xxx-checkbox label="选项1" border>选项1</xxx-checkbox>
             <xxx-checkbox label="选项2" border>选项2</xxx-checkbox>
@@ -38,7 +38,7 @@
       </template>
     </xxx-card>
     <h3>不同大小</h3>
-    <xxx-card>
+    <xxx-card :cpyMsg="code5">
         <xxx-checkbox-group v-model="checkList3">
             <xxx-checkbox label="选项1" border size="medium">选项1</xxx-checkbox>
             <xxx-checkbox label="选项2" border size="small">选项2</xxx-checkbox>

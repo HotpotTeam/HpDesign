@@ -1,7 +1,7 @@
 <template>
     <div>
         <h3>基础用法</h3>
-        <xxx-card>
+        <xxx-card :cpyMsg="code1">
             <xxx-button>default</xxx-button>
             <xxx-button type="primary">primary</xxx-button>
             <xxx-button type="info">info</xxx-button>
@@ -27,7 +27,7 @@
             </template> 
         </xxx-card>
         <h3>禁用状态</h3>
-        <xxx-card>
+        <xxx-card :cpyMsg="code2">
             <xxx-button disabled >default</xxx-button>
             <xxx-button disabled type="primary">primary</xxx-button>
             <xxx-button disabled type="info">info</xxx-button>
@@ -39,7 +39,7 @@
             </template> 
         </xxx-card>
         <h3>不同尺寸</h3>
-        <xxx-card>
+        <xxx-card :cpyMsg="code3">
             <xxx-button>默认</xxx-button>
             <xxx-button type="medium">中等</xxx-button>
             <xxx-button type="small">小型</xxx-button>

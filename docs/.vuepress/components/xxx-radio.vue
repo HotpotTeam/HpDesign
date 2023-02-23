@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3>基本用法</h3>
-    <xxx-card>
+    <xxx-card :cpyMsg="code1">
       <xxx-radio v-model="radio1" label="1">选项1</xxx-radio>
       <xxx-radio v-model="radio1" label="2">选项2</xxx-radio>
       <template v-slot:code>
@@ -9,7 +9,7 @@
       </template>
     </xxx-card>
     <h3>禁用状态</h3>
-    <xxx-card>
+    <xxx-card :cpyMsg="code2">
       <xxx-radio disabled v-model="radio2" label="1">选项1</xxx-radio>
       <xxx-radio disabled v-model="radio2" label="2">选项2</xxx-radio>
       <template v-slot:code>
@@ -17,7 +17,7 @@
       </template>
     </xxx-card>
     <h3>单选组</h3>
-    <xxx-card>
+    <xxx-card :cpyMsg="code3">
       <xxx-radio-group v-model="radio3">
         <xxx-radio  label="1">选项1</xxx-radio>
         <xxx-radio  label="2">选项2</xxx-radio>
@@ -27,7 +27,7 @@
       </template>
     </xxx-card>
     <h3>边框</h3>
-    <xxx-card>
+    <xxx-card :cpyMsg="code4">
       <xxx-radio-group v-model="radio4">
         <xxx-radio border label="1">选项1</xxx-radio>
         <xxx-radio border label="2">选项2</xxx-radio>
@@ -35,9 +35,9 @@
       <template v-slot:code>
         <pre v-highlightjs><code class="vue">{{code4}}</code></pre>
       </template>
-    </xxx-card>
+    </xxx-card :cpyMsg="code5">
     <h3>不同大小</h3>
-    <xxx-card>
+    <xxx-card >
       <xxx-radio-group v-model="radio5">
         <xxx-radio size="medium" border label="1">选项1</xxx-radio>
         <xxx-radio size="medium" border label="2">选项2</xxx-radio>

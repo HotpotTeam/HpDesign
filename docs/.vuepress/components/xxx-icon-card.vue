@@ -1,6 +1,6 @@
 <template>
   <div>
-    <xxx-card>
+    <xxx-card :cpyMsg="iconCode">
         <div>
           <h3 class="icon-title">{{inconTitle}}</h3>
         </div>
@@ -69,7 +69,7 @@ export default {
 
 
 .icon-title {
-    color: #000000d9;
+    // color: #000000d9;
     font-weight: 500;
 }
 
