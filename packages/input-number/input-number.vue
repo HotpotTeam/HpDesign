@@ -61,7 +61,7 @@
         @mouseup="mouseStop"
         @keydown.enter="increase"
         >
-        <xxx-icon class='suffix-icon-samesides' :class="{'is-disabled-sub': maxDisabled}" name='arrowup' ></xxx-icon>
+        <xxx-icon class='suffix-icon-samesides' :class="{'is-disabled-sub': maxDisabled}" name='arrowup'></xxx-icon>
         </div>
 
 
@@ -73,7 +73,7 @@
         @mousedown="mouseStart"
         @mouseup="mouseStop"
         @keydown.enter="decrease">
-        <xxx-icon class='prefix-icon-samesides' :class="{'is-disabled-sub': minDisabled}" name='arrowdown' > </xxx-icon>
+        <xxx-icon class='prefix-icon-samesides' :class="{'is-disabled-sub': minDisabled}" name='arrowdown'> </xxx-icon>
         </div>
 
         </div>
@@ -264,7 +264,8 @@ import xxxIcon from '../icon/icon.vue';
 			mouseStart(event){
         this.delayTriggerTimer = setInterval(()=> {
           // 防止感染短按
-          if (event.target.className.indexOf('add') != -1) this.timer = setInterval(()=>this.increase(),100);
+          // console.log(event.target.className)
+          if (event.target.className.indexOf('add') != -1 || event.target.className.indexOf('up') != -1) this.timer = setInterval(()=>this.increase(),100);
           else  this.timer = setInterval(()=>this.decrease(),100);
           clearInterval(this.delayTriggerTimer);
         }, 1000);
@@ -342,12 +343,16 @@ import xxxIcon from '../icon/icon.vue';
 }
 
 
+
+.suffix-icon-samesides, .prefix-icon-samesides {
+  color: black;
+}
+
 .is-disabled-sub,  .is-disabled-add {
     background-color: #f5f7fa;
     border-color: #e4e7ed;
-    color: #c0c4cc;
+    color: #c0c4cc ;
     cursor: not-allowed;
-
 }
 
 .prefix-sub-bothsides {
