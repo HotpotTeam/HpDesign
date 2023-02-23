@@ -12,7 +12,7 @@
     "docs:build": "vuepress build docs",
     "docs:dev": "vuepress dev docs",
     "lib": "vue-cli-service build --target lib packages/index.js"
-  },
+  },  
   "main": "dist/xixixi-ui.umd.min.js",
   "dependencies": {
     "core-js": "^3.6.5",
@@ -20,6 +20,10 @@
     "vue-highlightjs": "^1.3.3",
     "vue-router": "^3.2.0",
     "vuepress-theme-reco": "^1.6.16"
+
+    "vue-server-renderer": "^2.6.14",
+    "webpack": "^4.46.0"
+
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
