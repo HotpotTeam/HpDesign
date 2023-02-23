@@ -13,7 +13,7 @@
     "docs:dev": "vuepress dev docs",
     "lib": "vue-cli-service build --target lib packages/index.js"
   },  
-  "main": "dist/xixixi-ui.umd.min.js",
+  "main": "dist/hp-design.umd.min.js",
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
